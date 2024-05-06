@@ -13,7 +13,8 @@ git clone https://huggingface.co/Alshargi/libraryCodes
 
 #### install the library:
 ```bash
-pip install git+https://github.com/alshargi/SharjahArabicLibraryCode.git
+!pip install git+https://github.com/alshargi/SharjahArabicLibraryCode.git
+
 ```
 #### Demo of some of the features:
 ```python
