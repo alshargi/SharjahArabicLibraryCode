@@ -2,4 +2,4 @@
 
 
 
-from .predict import findCongCode
+from .predict import findCongCode, loadModels
