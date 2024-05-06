@@ -555,7 +555,7 @@ def findCongCode(to_predict, all_models):
     resultTP = f"{subcategory_nameTP}  N#: {subcategory_numberTP}"
     topCode = resultTP.split("  ")[0]
     #print("Result:",topCode)
-    FinalResult.append("Top Result:" + "\t" + topCode)
+    FinalResult.append("Top Result:" + "\t" + resultTP)
     
     if topCode == "A":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["A"])
