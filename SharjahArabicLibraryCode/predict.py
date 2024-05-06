@@ -548,7 +548,7 @@ def loadMosels():
 
 
 
-def get_pred_label(to_predict, all_models):
+def findCongCode(to_predict, all_models):
     subcategory_numberTP, probabilities = check_subCategory(to_predict, all_models["TP"])
     subcategory_nameTP = TOP_labels[subcategory_numberTP]
     resultTP = f"{subcategory_nameTP}  N#: {subcategory_numberTP}"
