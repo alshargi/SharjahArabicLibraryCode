@@ -2,4 +2,4 @@
 
 
 
-from .predict import get_pred_label, loadMosels
+from .predict import findCongCode
