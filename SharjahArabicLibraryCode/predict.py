@@ -543,7 +543,7 @@ def getlist(lstx):
 # load model
 # Load the consolidated model
 def loadMosels():
-    all_models = joblib.load('consolidated_models.pkl')
+    all_models = joblib.load('SharjahLibraryOfCongressModel.pkl')
     print("Models loaded")
 
 def get_pred_label(to_predict):
