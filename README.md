@@ -3,16 +3,14 @@ sharjah library codes
 
 
 
-transformers-cli repo download alshargi/librarycode
-
+Step # 1: clone the model
+git lfs install
 git clone https://huggingface.co/Alshargi/libraryCodes
-
-
-  #SharjahArabicLibraryCode
 
 
 #### install the library:
 ```bash
+Step # 1: install SharjahArabicLibraryCode the python library
 !pip install git+https://github.com/alshargi/SharjahArabicLibraryCode.git
 
 ```
