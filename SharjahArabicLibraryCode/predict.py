@@ -566,7 +566,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        FinalResult.append("Top Predictions:")
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
 
     if topCode == "B":
@@ -578,8 +580,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
-
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
     if topCode == "C":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["C"])
@@ -590,7 +592,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
 
     if topCode == "D":
@@ -602,8 +605,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
-
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
     if topCode == "E":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["E"])
@@ -614,7 +617,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
 
     if topCode == "F":
@@ -626,7 +630,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
 
     if topCode == "G":
@@ -638,8 +643,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
-
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
     if topCode == "H":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["H"])
@@ -650,8 +655,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
-
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
     if topCode == "J":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["J"])
@@ -662,8 +667,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
-
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
     if topCode == "K":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["K"])
@@ -674,8 +679,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
-
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["k_l3"])
         subcategory_name = k_3l_labels[subcategory_number]
@@ -685,7 +690,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
 
     if topCode == "L":
@@ -697,7 +703,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "M":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["M"])
@@ -708,7 +716,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "N":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["N"])
@@ -719,7 +729,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "P":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["P"])
@@ -730,7 +742,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "Q":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["Q"])
@@ -741,7 +755,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "R":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["R"])
@@ -752,7 +768,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "S":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["S"])
@@ -763,7 +781,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "T":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["T"])
@@ -774,7 +794,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "U":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["U"])
@@ -785,7 +807,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "V":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["V"])
@@ -796,7 +820,8 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
 
 
     if topCode == "W":
@@ -808,7 +833,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
     if topCode == "Z":
         subcategory_number, probabilities = check_subCategory(to_predict, all_models["Z"])
@@ -819,7 +846,9 @@ def findCongCode(to_predict, all_models):
         FinalResult.append("Result:" + "\t" + result)
         #print("Result:", result)
         #print("Top Predictions:")
-        getlist(top_predictionsFinal)
+        for i in top_predictionsFinal:
+            FinalResult.append(i)
+
 
 
     return FinalResult
