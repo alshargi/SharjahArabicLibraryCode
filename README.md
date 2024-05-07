@@ -41,9 +41,12 @@ for i in result:
 #### Result
 ```bash
 
-
 Top Result:	B  PHILOSOPHY. PSYCHOLOGY. RELIGION  N#: 1
 Result:	BP  ISLAM. BAHAISM. THEOSOPHY, ETC.  N#: 16
+% 99.7997  BP  ISLAM. BAHAISM. THEOSOPHY, ETC.
+% 0.1015  B1  Philosophy (General)—Periodicals. Serials—English and American
+% 0.0356  BF  PSYCHOLOGY
+% 0.0277  B8  Philosophy (General)—Periodicals. Serials—Other. By language, A-Z
 
 
 
