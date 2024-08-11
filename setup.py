@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='SharjahArabicLibraryCode',
-    version='0.0.15',
+    version='0.0.16',
     author='Faisal Alshargi',
     author_email='alshargi@hotmail.de',
     description='Arabic Library of congress code',
