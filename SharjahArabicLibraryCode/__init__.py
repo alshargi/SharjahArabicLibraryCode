@@ -3,3 +3,5 @@
 
 
 from .predict import findCongCode, getlist, findCongCodeSummary
+from .predict import findCongCodeSummary
+
