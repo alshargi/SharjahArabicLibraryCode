@@ -566,7 +566,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = A_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         FinalResult.append("Top Predictions:")
         subLabelSummary = top_predictionsFinal[0]
@@ -576,7 +576,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = B_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
         
@@ -585,7 +585,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = C_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -594,7 +594,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = D_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
         
@@ -603,7 +603,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = E_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
         
@@ -612,7 +612,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = F_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
     if topCode == "G":
@@ -620,7 +620,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = G_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
     if topCode == "H":
@@ -628,7 +628,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = H_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -637,7 +637,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = J_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
     if topCode == "K":
@@ -645,7 +645,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = K_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
         
@@ -653,7 +653,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = k_3l_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
     if topCode == "L":
@@ -661,7 +661,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = L_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -670,7 +670,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = M_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -679,7 +679,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = N_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -688,7 +688,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = P_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -697,7 +697,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = Q_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -706,7 +706,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = R_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -715,7 +715,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = S_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -724,7 +724,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = T_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
         
@@ -733,7 +733,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = U_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -742,7 +742,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = V_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
@@ -751,7 +751,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = W_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
         
@@ -760,7 +760,7 @@ def findCongCodeSummary(to_predict, all_models):
         subcategory_name = Z_labels[subcategory_number]
         result = f"{subcategory_name}  N#: {subcategory_number}"
         sorted_indices = np.argsort(probabilities)[::-1]  
-        top_predictionsFinal = ['{}'.format(A_labels[i]) for i in sorted_indices[:4]]
+        top_predictionsFinal = ['{}'.format(A_labels[sorted_indices[0]])]
         FinalResult.append("Result:" + "\t" + result)
         subLabelSummary = top_predictionsFinal[0]
 
