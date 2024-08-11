@@ -2,4 +2,4 @@
 
 
 
-from .predict import findCongCode, getlist
+from .predict import findCongCode, getlist, findCongCodeSummary
