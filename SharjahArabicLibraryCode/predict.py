@@ -548,6 +548,227 @@ def loadMosels():
 
 
 
+
+def findCongCodeSummary(to_predict, all_models):
+    FinalResult = []
+    topLabelSummary = ""
+    subLabelSummary = ""
+    subcategory_numberTP, probabilities = check_subCategory(to_predict, all_models["TP"])
+    subcategory_nameTP = TOP_labels[subcategory_numberTP]
+    resultTP = f"{subcategory_nameTP}  N#: {subcategory_numberTP}"
+    topCode = resultTP.split("  ")[0]
+    #print("Result:",topCode)
+    FinalResult.append("Top Result:" + "\t" + resultTP)
+    topLabelSummary = topCode
+    
+    if topCode == "A":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["A"])
+        subcategory_name = A_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), A_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        FinalResult.append("Top Predictions:")
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "B":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["B"])
+        subcategory_name = B_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), B_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+        
+    if topCode == "C":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["C"])
+        subcategory_name = C_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), C_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "D":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["D"])
+        subcategory_name = D_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), D_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+        
+    if topCode == "E":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["E"])
+        subcategory_name = E_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), E_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+        
+    if topCode == "F":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["F"])
+        subcategory_name = F_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), F_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+    if topCode == "G":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["G"])
+        subcategory_name = G_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), G_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+    if topCode == "H":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["H"])
+        subcategory_name = H_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), H_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "J":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["J"])
+        subcategory_name = J_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), J_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+    if topCode == "K":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["K"])
+        subcategory_name = K_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), K_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+        
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["k_l3"])
+        subcategory_name = k_3l_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), k_3l_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+    if topCode == "L":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["L"])
+        subcategory_name = L_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), L_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "M":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["M"])
+        subcategory_name = M_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), M_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "N":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["N"])
+        subcategory_name = N_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), N_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "P":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["P"])
+        subcategory_name = P_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), P_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "Q":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["Q"])
+        subcategory_name = Q_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), Q_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "R":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["R"])
+        subcategory_name = R_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), R_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "S":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["S"])
+        subcategory_name = S_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), S_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "T":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["T"])
+        subcategory_name = T_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), T_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+        
+    if topCode == "U":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["U"])
+        subcategory_name = U_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), U_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "V":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["V"])
+        subcategory_name = V_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), V_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    if topCode == "W":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["W"])
+        subcategory_name = W_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  # Sort in descending order
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), W_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+        
+    if topCode == "Z":
+        subcategory_number, probabilities = check_subCategory(to_predict, all_models["Z"])
+        subcategory_name = Z_labels[subcategory_number]
+        result = f"{subcategory_name}  N#: {subcategory_number}"
+        sorted_indices = np.argsort(probabilities)[::-1]  
+        top_predictionsFinal = ['% {}  {}'.format(round(probabilities[i], 4), Z_labels[i]) for i in sorted_indices[:4]]
+        FinalResult.append("Result:" + "\t" + result)
+        subLabelSummary = top_predictionsFinal[0]
+
+    return topLabelSummary, subLabelSummary
+
+
+
+
 def findCongCode(to_predict, all_models):
     FinalResult = []
     subcategory_numberTP, probabilities = check_subCategory(to_predict, all_models["TP"])
